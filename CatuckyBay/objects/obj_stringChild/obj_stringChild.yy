@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_dock",
+  "name": "obj_stringChild",
   "spriteId": {
-    "name": "spr_dock",
-    "path": "sprites/spr_dock/spr_dock.yy",
+    "name": "spr_string",
+    "path": "sprites/spr_string/spr_string.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,7 +12,7 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
-  "physicsObject": false,
+  "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -24,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

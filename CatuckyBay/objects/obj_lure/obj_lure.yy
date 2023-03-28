@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_dock",
-  "spriteId": {
-    "name": "spr_dock",
-    "path": "sprites/spr_dock/spr_dock.yy",
-  },
+  "name": "obj_lure",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
