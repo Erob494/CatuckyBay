@@ -22,19 +22,34 @@ waiting = true
 
 if point_distance(x,y,obj_lure.x,obj_lure.y) <= lureRadius{
 	chasing = true
-	show_debug_message("chasing")
+	
 	path_end()
 	move_towards_point(obj_lure.x,obj_lure.y,1)
 	
 	
 }
 if (point_distance(x,y,obj_lure.x,obj_lure.y) >= lureRadius+1) and chasing{
-		move_towards_point(startx,starty,1)
-		if point_distance(x,y,startx,starty)< 2{
+		fade = true
+		chasing = false
+	}
+
+if fade {
+	image_alpha = clamp(image_alpha - 0.01, 0, 1);
+	if image_alpha == 0 disapear = true
+	if disapear{
+		if (counter == 600)
+		{
+			show_debug_message("here")
 			path_start(p_fish, 1, path_action_continue, true);
-			chasing = false
-		}
+			path_position = random_range(0,1)
+		    counter = 0;
+			image_alpha = 1
+			disapear = false
+			fade = false
 			
+		}
+		else counter++;
 		
 	}
+}
 
