@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-rope_segments_length = 8
-
+draw_self()
+draw_line_color(x,y,obj_bobber.x,obj_bobber.y,c_white,c_white)
 
 
 

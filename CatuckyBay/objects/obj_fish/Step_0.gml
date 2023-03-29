@@ -1,5 +1,6 @@
 // Step Event code for the object following a path
 // obj_follow_path is the object that follows a path
+
 current_x = x;
 
 if waiting == false{
@@ -19,6 +20,21 @@ if (new_x > current_x ) {
 
 waiting = true
 
-if (point_distance(x, y, obj_lure.x, obj_lure.y) < 50) {
-    //Move towards the player
+if point_distance(x,y,obj_lure.x,obj_lure.y) <= lureRadius{
+	chasing = true
+	show_debug_message("chasing")
+	path_end()
+	move_towards_point(obj_lure.x,obj_lure.y,1)
+	
+	
 }
+if (point_distance(x,y,obj_lure.x,obj_lure.y) >= lureRadius+1) and chasing{
+		move_towards_point(startx,starty,1)
+		if point_distance(x,y,startx,starty)< 2{
+			path_start(p_fish, 1, path_action_continue, true);
+			chasing = false
+		}
+			
+		
+	}
+
