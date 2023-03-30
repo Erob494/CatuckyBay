@@ -5,6 +5,7 @@ disapear = false
 fade = false
 chasing = false
 waiting = false
+showMeter = false
 counter = 0
 path_position = pathPos
 

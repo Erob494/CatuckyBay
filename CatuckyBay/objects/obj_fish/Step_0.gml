@@ -1,14 +1,14 @@
-// Step Event code for the object following a path
-// obj_follow_path is the object that follows a path
-
+//get the current pos
 current_x = x;
 
+//periodically samples the fish x pos 
 if waiting == false{
 	waiting = true
 	alarm[0] = 15
 	new_x = x
 }
 
+//checks which way the fish is moving and flips the sprite respectively
 if (new_x < current_x ) {
 	
     image_xscale = 2; // Mirror the sprite horizontally
@@ -20,36 +20,54 @@ if (new_x > current_x ) {
 
 waiting = true
 
+//If fish is in the set radius move twords the bait
 if point_distance(x,y,obj_lure.x,obj_lure.y) <= lureRadius{
 	chasing = true
 	
 	path_end()
 	move_towards_point(obj_lure.x,obj_lure.y,1)
-	
-	
+	//Displays catch meter
+	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x,obj_fishingRod.y -36,"Instances",obj_meter);
+		
 }
+
+
+
+
+
+//checks if fish is too far
 if (point_distance(x,y,obj_lure.x,obj_lure.y) >= lureRadius+1) and chasing{
 		fade = true
 		chasing = false
+		instance_destroy(obj_meter)
+		instance_destroy(obj_sweetSpot)
+		
 	}
 
+//fades the image of the fish and after 10 seconds will respawn the fish
 if fade {
 	image_alpha = clamp(image_alpha - 0.01, 0, 1);
-	if image_alpha == 0 disapear = true
+	if image_alpha == 0{
+		disapear = true
+		// moves invisable fish away from water
+		x = 0
+		y = -700
+	}
+	// 10 second timer
 	if disapear{
 		if (counter == 600)
 		{
 			show_debug_message("here")
 			path_start(p_fish, 1, path_action_continue, true);
+			//start at a random position on the path
 			path_position = random_range(0,1)
 		    counter = 0;
-			image_alpha = 1
 			disapear = false
 			fade = false
-			
 		}
 		else counter++;
-		
 	}
 }
+//fade fish back in
+else image_alpha = clamp(image_alpha + 0.01, 0, 1);
 
