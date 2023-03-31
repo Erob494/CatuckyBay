@@ -28,20 +28,35 @@ if point_distance(x,y,obj_lure.x,obj_lure.y) <= lureRadius{
 	move_towards_point(obj_lure.x,obj_lure.y,1)
 	//Displays catch meter
 	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x,obj_fishingRod.y -36,"Instances",obj_meter);
-		
+	if global.meterSuccess{
+		instance_destroy(obj_sweetSpot)
+		instance_destroy(obj_meterLine)
+		instance_destroy(obj_meter)
+		move_towards_point(obj_bobber.x,obj_bobber.y,1)
+		fade = true
+		chasing = false
+	
+		if counter == 180{
+			global.meterSuccess = false
+			counter = 0
+			global.fishA++
+			
+		}
+		else counter++;
+		fade = false
 }
-
-
-
+	
+}
 
 
 //checks if fish is too far
 if (point_distance(x,y,obj_lure.x,obj_lure.y) >= lureRadius+1) and chasing{
 		fade = true
 		chasing = false
-		instance_destroy(obj_meter)
-		instance_destroy(obj_sweetSpot)
 		
+		instance_destroy(obj_sweetSpot)
+		instance_destroy(obj_meterLine)
+		instance_destroy(obj_meter)
 	}
 
 //fades the image of the fish and after 10 seconds will respawn the fish
@@ -64,10 +79,13 @@ if fade {
 		    counter = 0;
 			disapear = false
 			fade = false
+			
 		}
 		else counter++;
 	}
 }
 //fade fish back in
 else image_alpha = clamp(image_alpha + 0.01, 0, 1);
+
+
 

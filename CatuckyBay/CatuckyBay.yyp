@@ -8,6 +8,7 @@
     {"id":{"name":"spr_sweetSpot","path":"sprites/spr_sweetSpot/spr_sweetSpot.yy",},"order":9,},
     {"id":{"name":"obj_dock","path":"objects/obj_dock/obj_dock.yy",},"order":0,},
     {"id":{"name":"obj_bobber","path":"objects/obj_bobber/obj_bobber.yy",},"order":2,},
+    {"id":{"name":"globals","path":"scripts/globals/globals.yy",},"order":0,},
     {"id":{"name":"spr_dock","path":"sprites/spr_dock/spr_dock.yy",},"order":1,},
     {"id":{"name":"sha_water","path":"shaders/sha_water/sha_water.yy",},"order":0,},
     {"id":{"name":"spr_bobbe","path":"sprites/spr_bobbe/spr_bobbe.yy",},"order":5,},
