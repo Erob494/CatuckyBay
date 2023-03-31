@@ -18,11 +18,9 @@
   "layers": [
     {"resourceType":"GMRPathLayer","resourceVersion":"1.0","name":"Path_1","pathId":{"name":"p_fish","path":"paths/p_fish/p_fish.yy",},"colour":4278190335,"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2CBAB4EF","properties":[],"isDnd":false,"objectId":{"name":"obj_fishingRod","path":"objects/obj_fishingRod/obj_fishingRod.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":160.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_211F3AAB","properties":[],"isDnd":false,"objectId":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":21.5,"scaleY":3.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":416.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6627B478","properties":[],"isDnd":false,"objectId":{"name":"obj_dock","path":"objects/obj_dock/obj_dock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":13.500001,"scaleY":13.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-64.0,"y":384.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2CB9D7F2","properties":[],"isDnd":false,"objectId":{"name":"obj_lure","path":"objects/obj_lure/obj_lure.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1152.0,"y":448.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_605F3CF","properties":[],"isDnd":false,"objectId":{"name":"obj_bobber","path":"objects/obj_bobber/obj_bobber.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2CBAB4EF","properties":[],"isDnd":false,"objectId":{"name":"obj_fishingRod","path":"objects/obj_fishingRod/obj_fishingRod.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":736.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6627B478","properties":[],"isDnd":false,"objectId":{"name":"obj_dock","path":"objects/obj_dock/obj_dock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":39.93478,"scaleY":13.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-224.0,"y":704.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_605F3CF","properties":[],"isDnd":false,"objectId":{"name":"obj_bobber","path":"objects/obj_bobber/obj_bobber.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":672.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4DDA8E29","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"pathPos","path":"objects/obj_fish/obj_fish.yy",},"objectId":{"name":"obj_fish","path":"objects/obj_fish/obj_fish.yy",},"value":".1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"startx","path":"objects/obj_fish/obj_fish.yy",},"objectId":{"name":"obj_fish","path":"objects/obj_fish/obj_fish.yy",},"value":"1120",},
@@ -48,13 +46,11 @@
   "instanceCreationOrder": [
     {"name":"inst_6627B478","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2CBAB4EF","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_605F3CF","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_211F3AAB","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_2CB9D7F2","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4DDA8E29","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_5B676E6","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4564A397","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_798C675","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_605F3CF","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

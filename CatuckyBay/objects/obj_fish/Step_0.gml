@@ -20,20 +20,20 @@ if (new_x > current_x ) {
 
 waiting = true
 
-//If fish is in the set radius move twords the bait
-if point_distance(x,y,obj_lure.x,obj_lure.y) <= lureRadius{
+//If fish is in the set radius move towards the bait
+if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.active{
 	chasing = true
 	
 	path_end()
-	move_towards_point(obj_lure.x,obj_lure.y,1)
+	move_towards_point(obj_bobber.x,obj_bobber.y,1)
 	//Displays catch meter
-	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x,obj_fishingRod.y -36,"Instances",obj_meter);
+	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x,obj_fishingRod.y -128,"Instances",obj_meter);
 	if global.meterSuccess{
 		instance_destroy(obj_sweetSpot)
 		instance_destroy(obj_meterLine)
 		instance_destroy(obj_meter)
-		move_towards_point(obj_bobber.x,obj_bobber.y,1)
-		fade = true
+		move_towards_point(obj_fishingRod.x,obj_fishingRod.y,1)
+		//fade = true
 		chasing = false
 	
 		if counter == 180{
@@ -43,14 +43,14 @@ if point_distance(x,y,obj_lure.x,obj_lure.y) <= lureRadius{
 			
 		}
 		else counter++;
-		fade = false
+		fade = true
 }
 	
 }
 
 
 //checks if fish is too far
-if (point_distance(x,y,obj_lure.x,obj_lure.y) >= lureRadius+1) and chasing{
+if (point_distance(x,y,obj_bobber.x,obj_bobber.y) >= lureRadius+1) and chasing and obj_bobber.active{
 		fade = true
 		chasing = false
 		
@@ -70,7 +70,7 @@ if fade {
 	}
 	// 10 second timer
 	if disapear{
-		if (counter == 600)
+		if (counter == sTimer*60)
 		{
 			show_debug_message("here")
 			path_start(p_fish, 1, path_action_continue, true);
