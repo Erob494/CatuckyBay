@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_fishPuffer",
   "spriteId": {
-    "name": "spr_mcIdle",
-    "path": "sprites/spr_mcIdle/spr_mcIdle.yy",
+    "name": "spr_fishPuffer",
+    "path": "sprites/spr_fishPuffer/spr_fishPuffer.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_fishSword",
+    "path": "objects/obj_fishSword/obj_fishSword.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,12 +27,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":50,"eventType":9,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"pathPos","path":"objects/obj_fishSword/obj_fishSword.yy",},"objectId":{"name":"obj_fishSword","path":"objects/obj_fishSword/obj_fishSword.yy",},"value":".77",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",

@@ -11,11 +11,11 @@ if waiting == false{
 //checks which way the fish is moving and flips the sprite respectively
 if (new_x < current_x ) {
 	
-    image_xscale = 2; // Mirror the sprite horizontally
+    image_xscale = -1; // Mirror the sprite horizontally
 }
 
 if (new_x > current_x ) {
-    image_xscale = -2; // Reset the sprite's scale
+    image_xscale = 1; // Reset the sprite's scale
 }
 
 waiting = true

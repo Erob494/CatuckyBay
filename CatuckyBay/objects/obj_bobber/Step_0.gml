@@ -5,7 +5,7 @@ y = clamp(y, 0,room_height)
 
 if cast == 1{
 	if point_distance(x, y, mx, my) > 5 {
-		move_towards_point(mx,my, 5);
+		move_towards_point(mx,my, castSpeed);
 	}
 	else {
 		speed = 0;
