@@ -8,6 +8,7 @@
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"order":5,},
     {"id":{"name":"spr_zombie","path":"sprites/spr_zombie/spr_zombie.yy",},"order":12,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":11,},
+    {"id":{"name":"obj_tbc","path":"objects/obj_tbc/obj_tbc.yy",},"order":14,},
     {"id":{"name":"spr_sweetSpot","path":"sprites/spr_sweetSpot/spr_sweetSpot.yy",},"order":9,},
     {"id":{"name":"obj_dock","path":"objects/obj_dock/obj_dock.yy",},"order":0,},
     {"id":{"name":"obj_bobber","path":"objects/obj_bobber/obj_bobber.yy",},"order":2,},
@@ -16,6 +17,7 @@
     {"id":{"name":"sha_water","path":"shaders/sha_water/sha_water.yy",},"order":0,},
     {"id":{"name":"spr_mcWalkUp","path":"sprites/spr_mcWalkUp/spr_mcWalkUp.yy",},"order":0,},
     {"id":{"name":"spr_bobbe","path":"sprites/spr_bobbe/spr_bobbe.yy",},"order":5,},
+    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},"order":2,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":0,},
     {"id":{"name":"spr_string","path":"sprites/spr_string/spr_string.yy",},"order":4,},
     {"id":{"name":"obj_zombie","path":"objects/obj_zombie/obj_zombie.yy",},"order":12,},
@@ -54,6 +56,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
