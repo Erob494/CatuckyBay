@@ -21,30 +21,23 @@ if (new_x > current_x ) {
 waiting = true
 
 //If fish is in the set radius move towards the bait
-if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.active{
+if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.active and !global.meterSuccess and !global.meterFail{
 	chasing = true
 	
 	path_end()
 	move_towards_point(obj_bobber.x,obj_bobber.y,1)
 	//Displays catch meter
 	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x,obj_fishingRod.y -128,"Instances",obj_meter);
-	if global.meterSuccess{
-		instance_destroy(obj_sweetSpot)
-		instance_destroy(obj_meterLine)
-		instance_destroy(obj_meter)
+	if global.meterSuccess or global.meterFail{
+		
 		move_towards_point(obj_fishingRod.x,obj_fishingRod.y,1)
 		//fade = true
 		chasing = false
-	
-		if counter == 180{
-			global.meterSuccess = false
-			counter = 0
-			global.fishA++
-			
-		}
-		else counter++;
+		global.meterSuccess = false
+		global.meterFail = false
 		fade = true
-}
+		
+	}
 	
 }
 
@@ -61,7 +54,7 @@ if (point_distance(x,y,obj_bobber.x,obj_bobber.y) >= lureRadius+1) and chasing a
 
 //fades the image of the fish and after 10 seconds will respawn the fish
 if fade {
-	image_alpha = clamp(image_alpha - 0.01, 0, 1);
+	image_alpha = clamp(image_alpha - 0.02, 0, 1);
 	if image_alpha == 0{
 		disapear = true
 		// moves invisable fish away from water
@@ -79,6 +72,8 @@ if fade {
 		    counter = 0;
 			disapear = false
 			fade = false
+			global.meterFail = false
+			global.meterSuccess = false
 			
 		}
 		else counter++;
