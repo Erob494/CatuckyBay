@@ -6,4 +6,8 @@ if (!attacking){
 	attacking = false;
 }
 
+if(attacking){
+	global.lives--;
+}
+
 
