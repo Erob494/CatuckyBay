@@ -2,12 +2,9 @@
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
   "name": "p_fish",
-  "closed": true,
   "kind": 1,
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
-  },
+  "closed": true,
+  "precision": 4,
   "points": [
     {"speed":100.0,"x":416.0,"y":544.0,},
     {"speed":100.0,"x":832.0,"y":128.0,},
@@ -52,5 +49,8 @@
     {"speed":100.0,"x":1376.0,"y":256.0,},
     {"speed":100.0,"x":1536.0,"y":416.0,},
   ],
-  "precision": 4,
+  "parent": {
+    "name": "Paths",
+    "path": "folders/Paths.yy",
+  },
 }
