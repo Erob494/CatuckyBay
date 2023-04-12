@@ -17,5 +17,6 @@ else {
 
 	
 }
+obj_bobber.cast = 0;
 
 
