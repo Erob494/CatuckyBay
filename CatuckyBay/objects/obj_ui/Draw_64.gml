@@ -17,7 +17,7 @@ if (room = Room2){
 	camx = camera_get_view_x(0);
 	camy = camera_get_view_y(0);
 	offset = 64
-	
+	//ADD INVENTORY FOR FISH HERE TOO
 	for(var i = 0; i<global.lives;i++){
 		if(i =0){
 			draw_sprite(spr_hearts,0,camx + offset, camy)
@@ -27,4 +27,3 @@ if (room = Room2){
 	}//end for loop
 	draw_text(x+850,y, "Press 2 to go to next day")
 }//end of room if statement
-

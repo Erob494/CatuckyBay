@@ -15,7 +15,9 @@ if keyboard_check(vk_right){
 	x += 2
 }
 
-
+if(global.lives==0){
+	room_goto(rm_gameOver);
+}
 
 
 
