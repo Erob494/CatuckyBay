@@ -33,8 +33,8 @@ if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.ac
 		move_towards_point(obj_fishingRod.x,obj_fishingRod.y,1)
 		//fade = true
 		chasing = false
-		global.meterSuccess = false
-		global.meterFail = false
+		
+		
 		fade = true
 		
 	}
@@ -54,12 +54,28 @@ if (point_distance(x,y,obj_bobber.x,obj_bobber.y) >= lureRadius+1) and chasing a
 
 //fades the image of the fish and after 10 seconds will respawn the fish
 if fade {
-	image_alpha = clamp(image_alpha - 0.02, 0, 1);
-	if image_alpha == 0{
-		disapear = true
-		// moves invisable fish away from water
-		x = 0
-		y = -700
+	if global.meterSuccess{
+		var dist =point_distance(x,y,500,-600);
+		var dir =point_direction(x,y,500,-600); 
+		var movespeed = 4;
+		if dist>movespeed { 
+			image_xscale = clamp(image_xscale + .1,1, 4)
+			image_xscale = clamp(image_xscale + .1,1, 4)
+			x+=lengthdir_x(movespeed,dir);
+			y+=lengthdir_y(movespeed,dir);
+			} 
+			else { x=500;y=-600; }
+	
+		global.meterSuccess = false
+	}
+	if global.meterFail{
+		image_alpha = clamp(image_alpha - 0.02, 0, 1);
+		if image_alpha == 0{
+			disapear = true
+			// moves invisable fish away from water
+			x = 0
+			y = -700
+		}
 	}
 	// 10 second timer
 	if disapear{

@@ -5,5 +5,12 @@ if cast == 1{
 	mx = mouse_x
 	my = mouse_y
 }
+else{
+	global.meterSuccess = false
+	active = false
+	cast = 0
+}
+	
+
 
 
