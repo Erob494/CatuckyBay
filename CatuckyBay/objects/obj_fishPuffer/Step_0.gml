@@ -1,3 +1,5 @@
+/// @description Insert description here
+// You can write your code in this editor
 //get the current pos
 current_x = x;
 
@@ -33,7 +35,8 @@ if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.ac
 		move_towards_point(obj_fishingRod.x,obj_fishingRod.y,1)
 		//fade = true
 		chasing = false
-		
+		global.meterSuccess = false
+		global.meterFail = false
 		fade = true
 		
 	}
@@ -53,12 +56,6 @@ if (point_distance(x,y,obj_bobber.x,obj_bobber.y) >= lureRadius+1) and chasing a
 
 //fades the image of the fish and after 10 seconds will respawn the fish
 if fade {
-	if global.meterSuccess{
-		show_debug_message("+fishsword")
-		global.swordCount += 1
-		global.meterSuccess = false
-		
-	}
 	image_alpha = clamp(image_alpha - 0.02, 0, 1);
 	if image_alpha == 0{
 		disapear = true
@@ -68,7 +65,11 @@ if fade {
 	}
 	// 10 second timer
 	if disapear{
-		
+		if global.meterSuccess{
+			global.pufferCount += 1
+			global.meterSuccess = false
+		}
+			
 		if (counter == sTimer*60)
 		{
 			show_debug_message("here")
@@ -79,9 +80,7 @@ if fade {
 			disapear = false
 			fade = false
 			
-			global.meterFail = false
-			
-			
+			global.meterSuccess = false
 			
 		}
 		else counter++;
@@ -89,6 +88,8 @@ if fade {
 }
 //fade fish back in
 else image_alpha = clamp(image_alpha + 0.01, 0, 1);
+
+
 
 
 
