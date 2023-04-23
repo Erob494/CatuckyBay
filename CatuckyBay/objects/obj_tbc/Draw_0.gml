@@ -10,7 +10,7 @@ if(room = rm_intro){
 
 if (room = Room3){
 	draw_set_colour(c_white);
-	draw_text_transformed(x-300, y, "TO BE CONTINUED...", 3 , 3,0 )
+	draw_text_transformed(x-300, y, "Great Job, all the fish were caught!", 3 , 3,0 )
 }
 
 if (room = rm_gameOver){

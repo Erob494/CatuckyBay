@@ -27,7 +27,7 @@ if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.ac
 	path_end()
 	move_towards_point(obj_bobber.x,obj_bobber.y,1)
 	//Displays catch meter
-	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x,obj_fishingRod.y -128,"Instances",obj_meter);
+	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x+200,obj_fishingRod.y -128,"Instances",obj_meter);
 	if global.meterSuccess or global.meterFail{
 		
 		move_towards_point(obj_fishingRod.x,obj_fishingRod.y,1)
@@ -53,12 +53,7 @@ if (point_distance(x,y,obj_bobber.x,obj_bobber.y) >= lureRadius+1) and chasing a
 
 //fades the image of the fish and after 10 seconds will respawn the fish
 if fade {
-	if global.meterSuccess{
-		show_debug_message("+fishsword")
-		global.swordCount += 1
-		global.meterSuccess = false
-		
-	}
+	if global.meterSuccess instance_destroy()
 	image_alpha = clamp(image_alpha - 0.02, 0, 1);
 	if image_alpha == 0{
 		disapear = true

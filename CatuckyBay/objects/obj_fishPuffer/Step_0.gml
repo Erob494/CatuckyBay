@@ -29,7 +29,7 @@ if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.ac
 	path_end()
 	move_towards_point(obj_bobber.x,obj_bobber.y,1)
 	//Displays catch meter
-	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x,obj_fishingRod.y -128,"Instances",obj_meter);
+	if (!instance_exists(obj_meter)) instance_create_layer(obj_fishingRod.x+200,obj_fishingRod.y -128,"Instances",obj_meter);
 	if global.meterSuccess or global.meterFail{
 		
 		move_towards_point(obj_fishingRod.x,obj_fishingRod.y,1)
@@ -65,10 +65,7 @@ if fade {
 	}
 	// 10 second timer
 	if disapear{
-		if global.meterSuccess{
-			global.pufferCount += 1
-			global.meterSuccess = false
-		}
+		if global.meterSuccess instance_destroy()
 			
 		if (counter == sTimer*60)
 		{

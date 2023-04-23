@@ -9,6 +9,9 @@ waiting = false
 caught = false
 counter = 0
 path_position = pathPos
-caughtCountS = 0
+caughtCountP = 0
+
+
+
 
 

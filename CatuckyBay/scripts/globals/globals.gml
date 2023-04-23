@@ -4,3 +4,5 @@ global.meterSuccess = false
 global.swordCount = 0
 global.pufferCount = 0
 global.meterFail = false
+global.level = 1
+global.maxFish = 5
