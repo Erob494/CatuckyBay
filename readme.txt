@@ -8,8 +8,13 @@ Game Description:
     
 First Level:
     
-    The first level of 'Catucky Bay' involves the fishing. There are three types of fish. The first type of fish is the swordfish which grants the ability to forward thrust/dash that damages zombies. The second type of fish is the pufferfish that you can use as a bomb to throw. The third type of fish is the whale which will completely wipe the current wave of zombies. These fish are all considerably helpful in the second level of zombies so it is important that the player does well fishing to help survive the waves of zombies.
+    The first level of 'Catucky Bay' involves the fishing. There are two types of fish. The first type of fish is the swordfish which grants the ability to cast an attack that goes through multiple zombies. The second type of fish is the pufferfish that you can use as a bomb to throw. These fish are all considerably helpful in the second level of zombies so it is important that the player does well fishing to help survive the waves of zombies.
     
 Second Level:
   
-    The second level of 'Catucky Bay' involves surviving hordes of zombies. The waves will come at your continuously getting stronger. As the player, you must use your powerups and surival instincts to stay alive and win the game.
+    The second level of 'Catucky Bay' involves surviving hordes of zombies. The waves will come at your continuously growing in size. As the player, you must use your powerups and surival instincts to stay alive and win the game.
+
+Cheats:
+Alt + M: Frant 5 of each fish
+Alt + Q: Go to zombie level
+Alt + W: Makes the game the very last level (must be done in fishing mode)
