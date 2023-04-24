@@ -43,10 +43,10 @@ if (room = Room2){
 	//ADD INVENTORY FOR FISH HERE TOO
 	for(var i = 0; i<global.lives;i++){
 		if(i =0){
-			draw_sprite(spr_hearts,0,camx + offset, camy)
+			draw_sprite(spr_hearts,0,camx + offset, camy+75)
 		}else{
-		draw_sprite(spr_hearts,0,camx + offset*i, camy)
+		draw_sprite(spr_hearts,0,camx + offset*i, camy+75)
 		}//end if else
 	}//end for loop
-	draw_text(x+850,y, "Press 2 to go to next day")
+	//draw_text(x+850,y, "Press 2 to go to next day")
 }//end of room if statement

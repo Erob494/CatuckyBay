@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if (!attacking){
-	alarm[0] = room_speed;
+	alarm[0] = 50;
 	attacking = false;
 }
 
