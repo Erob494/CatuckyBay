@@ -33,6 +33,12 @@ switch(moveRoom){
 		room_goto(rm_GameWin)
 		global.pufferCount = 0
 		global.swordCount = 0
+	break;
+	case 7:
+		room_goto(rm_Controls)
+	break;
+	case 8:
+		room_goto(rm_intro)
 	default:
 		game_restart();
 	break;

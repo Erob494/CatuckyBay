@@ -37,6 +37,7 @@
   ],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"pathPos","path":"objects/obj_fishSword/obj_fishSword.yy",},"objectId":{"name":"obj_fishSword","path":"objects/obj_fishSword/obj_fishSword.yy",},"value":".77",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"sTimer","path":"objects/obj_fishSword/obj_fishSword.yy",},"objectId":{"name":"obj_fishSword","path":"objects/obj_fishSword/obj_fishSword.yy",},"value":"4",},
   ],
   "parent": {
     "name": "Objects",

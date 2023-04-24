@@ -8,12 +8,12 @@ if (room = Room1){
 	if !instance_exists(obj_player){
 		//draw_text(x+200,y, "Press 2 to got to next room")
 		draw_text(x+500,y, "Press left mouse to cast fishing line")
-		draw_text(x+850,y, "Press SPACE to reel in")
+		
 	}
 	if(!call){
 		event_user(0)
 	}
-	draw_text(x+1200,y-5,timer)
+	draw_text(x+1000,y-5,"Time Left: " + string(timer))
 
 	if (timer > 0) {timer--;}
 

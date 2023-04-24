@@ -26,3 +26,7 @@ if (room = rm_GameWin){
 	draw_set_colour(c_white);
 	draw_text_transformed(x-300, y, "Congratulations! \nYou have defeated all of the zombies", 3 , 3,0 )
 }
+if (room = rm_Controls){
+	draw_set_colour(c_white);
+	draw_text_transformed(x-300, y, "PART ONE: FISHING\nPress left click to cast\nPress space when the bar is in the green spot to catch a fish\nAfter catching all the fish you will proceed to the nightly apocalypse\nWhen the timer is out you proceeed to the nightly apocalypse\n\nPART TWO: THE NIGHLY APOCALYPSE\nPress 1 to use the sword fish\nPress 2 to use the puffer fish\nPress space to fire a normal attack\n\nGoal: \nUse each fish's special power to defeated all of the zombies\nThis will take three nights of zombie slaying\nGood Luck.", 2 , 2,0 )
+}

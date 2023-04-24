@@ -35,7 +35,11 @@ switch(button){
 		draw_text(inst_325048FF.x +20, inst_325048FF.y, "Main Menu")
 
 	break;
-	
+	case 7:
+		draw_text(inst_43FF7BD8.x +20, inst_43FF7BD8.y, "How to Play")
+	break;
+	case 8:
+		draw_text(inst_4921C0C8.x+20, inst_4921C0C8.y, "Return to Title Screen")
 	default:
 	break;
 }
