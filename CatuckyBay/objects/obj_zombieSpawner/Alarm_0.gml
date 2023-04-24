@@ -9,7 +9,12 @@ if(zombiesSpawned < (maxSpawn*global.waves) ){
 	zombiesSpawned ++;
 }else{
 	if(!instance_exists(obj_zombie)){
+		if global.waves == 3{
+			room_goto(rm_GameWin)
+		}
+		else{
 		room_goto(Room3)
+		}
 	}
 }
 

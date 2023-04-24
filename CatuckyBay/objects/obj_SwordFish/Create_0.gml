@@ -28,4 +28,4 @@ switch(obj_player.dir){
 }
 
 
-alarm[0] = 25;
+alarm[0] = 50;

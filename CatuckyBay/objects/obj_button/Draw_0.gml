@@ -30,6 +30,9 @@ switch(button){
 	case 5:
 		draw_text(inst_7861341B.x+20, inst_7861341B.y, "Next Wave")
 	break;
+	case 6:		
+		draw_text(inst_325048FF.x +20, inst_325048FF.y, "Min Menu")
+	break;
 	
 	default:
 	break;

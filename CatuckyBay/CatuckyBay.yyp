@@ -29,6 +29,7 @@
     {"id":{"name":"spr_string","path":"sprites/spr_string/spr_string.yy",},"order":8,},
     {"id":{"name":"obj_zombie","path":"objects/obj_zombie/obj_zombie.yy",},"order":12,},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},"order":3,},
+    {"id":{"name":"rm_GameWin","path":"rooms/rm_GameWin/rm_GameWin.yy",},"order":5,},
     {"id":{"name":"spr_lure","path":"sprites/spr_lure/spr_lure.yy",},"order":11,},
     {"id":{"name":"spr_meter","path":"sprites/spr_meter/spr_meter.yy",},"order":12,},
     {"id":{"name":"spr_fishPuffer","path":"sprites/spr_fishPuffer/spr_fishPuffer.yy",},"order":2,},
@@ -70,6 +71,7 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"rm_gameOver","path":"rooms/rm_gameOver/rm_gameOver.yy",},},
+    {"roomId":{"name":"rm_GameWin","path":"rooms/rm_GameWin/rm_GameWin.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

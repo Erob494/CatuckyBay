@@ -16,3 +16,6 @@ if(keyboard_check_pressed(ord("M"))){
 	global.pufferCount = 5;
 	global.swordCount = 5;
 }
+if(keyboard_check_pressed(ord("W"))){
+	global.waves = 3
+}

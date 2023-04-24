@@ -22,4 +22,7 @@ if (room = rm_gameOver){
 	//draw_text_transformed(inst_489A22F7.x, inst_489A22F7.y, "Try Again", 2 , 2,0 )
 	//draw_text_transformed(inst_214DB9DA.x, inst_214DB9DA.y, "Return to Title Screen", 2 , 2,0 )
 }
-
+if (room = rm_GameWin){
+	draw_set_colour(c_white);
+	draw_text_transformed(x-300, y, "Congratulations! \nYou have defeated all of the zombies", 3 , 3,0 )
+}

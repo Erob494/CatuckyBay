@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+inflate = false
 switch(obj_player.dir){
 	case 0:
 		hspeed = 20;
