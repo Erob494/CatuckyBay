@@ -5,7 +5,7 @@ draw_set_colour(c_black);
 switch(button){
 	//How To Play @ rm_intro
 	case 0:
-		draw_text(inst_7868FF03.x+50, inst_7868FF03.y, "How to Play")
+		//draw_text(inst_7868FF03.x+50, inst_7868FF03.y, "How to Play")
 	break;
 	
 	//Start @ rm_intro
@@ -24,7 +24,7 @@ switch(button){
 	break;
 	
 	case 4:
-		draw_text(inst_1898E739.x+20, inst_1898E739.y, "Return to Title Screen")
+		//draw_text(inst_1898E739.x+20, inst_1898E739.y, "Return to Title Screen")
 	break;
 	
 	case 5:

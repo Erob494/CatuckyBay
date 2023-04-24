@@ -41,6 +41,7 @@ if room = Room1 and !instance_exists(obj_fishPuffer) and !instance_exists(obj_fi
 	
 }
 if (room = Room2){
+	
 	timer = -1;
 	draw_set_color(c_white);
 	offset = 64

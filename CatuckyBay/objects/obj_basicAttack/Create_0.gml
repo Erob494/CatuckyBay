@@ -3,27 +3,27 @@
 
 switch(obj_player.dir){
 	case 0:
-		hspeed = 6;
+		hspeed = 10;
 		image_xscale = -1;
 	break;
 	
 	case 90:
 		image_angle = 270;
-		vspeed = -6;
+		vspeed = -10;
 	break;
 	
 	case 180:
-		hspeed = -6;
+		hspeed = -10;
 		
 	break;
 	
 	case 270:
-		vspeed = 6;
+		vspeed = 10;
 		image_angle = 90;
 	break;
 	
 	default:
-		hspeed = 6;
+		hspeed = 10;
 	break;
 }
 

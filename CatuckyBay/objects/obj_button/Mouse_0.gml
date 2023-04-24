@@ -30,7 +30,7 @@ switch(moveRoom){
 	break;
 	
 	case 6:
-		room_goto(rm_GameWin)
+		room_goto(rm_intro)
 		global.pufferCount = 0
 		global.swordCount = 0
 	break;

@@ -24,7 +24,7 @@ if (room = rm_gameOver){
 }
 if (room = rm_GameWin){
 	draw_set_colour(c_white);
-	draw_text_transformed(x-300, y, "Congratulations! \nYou have defeated all of the zombies", 3 , 3,0 )
+	draw_text_transformed(x-300, y, "Congratulations!\n \nYou have defeated all of the zombies\nNow you can fish for fun and not for survival.", 3 , 3,0 )
 }
 if (room = rm_Controls){
 	draw_set_colour(c_white);
