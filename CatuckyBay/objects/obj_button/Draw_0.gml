@@ -23,6 +23,14 @@ switch(button){
 		draw_text(inst_489A22F7.x+20, inst_489A22F7.y, "Return to Title Screen")
 	break;
 	
+	case 4:
+		draw_text(inst_1898E739.x+20, inst_1898E739.y, "Return to Title Screen")
+	break;
+	
+	case 5:
+		draw_text(inst_7861341B.x+20, inst_7861341B.y, "Next Wave")
+	break;
+	
 	default:
 	break;
 }

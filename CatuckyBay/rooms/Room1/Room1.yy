@@ -32,7 +32,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_798C675","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"pathPos","path":"objects/obj_fishSword/obj_fishSword.yy",},"objectId":{"name":"obj_fishSword","path":"objects/obj_fishSword/obj_fishSword.yy",},"value":".8",},
           ],"isDnd":false,"objectId":{"name":"obj_fishSword","path":"objects/obj_fishSword/obj_fishSword.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":672.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7125D985","properties":[],"isDnd":false,"objectId":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_34381264","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"pathPos","path":"objects/obj_fishSword/obj_fishSword.yy",},"objectId":{"name":"obj_fishSword","path":"objects/obj_fishSword/obj_fishSword.yy",},"value":".18",},
           ],"isDnd":false,"objectId":{"name":"obj_fishPuffer","path":"objects/obj_fishPuffer/obj_fishPuffer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1408.0,"y":608.0,},
@@ -53,7 +52,6 @@
     {"name":"inst_4564A397","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_798C675","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_605F3CF","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_7125D985","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_34381264","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_79347F1","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_67DA0532","path":"rooms/Room1/Room1.yy",},

@@ -3,10 +3,11 @@
 
 switch(moveRoom){
 	case 0:
-		room_goto(rm_intro);
+		game_restart();
 	break;
 	
 	case 1:
+		obj_ui.call = false;
 		room_goto(Room1);
 	break;
 	
@@ -22,7 +23,13 @@ switch(moveRoom){
 		room_goto(rm_gameOver)
 	break;
 
+	case 5:
+		global.waves++;
+		obj_ui.call = false;
+		room_goto(Room1);
+	break;
+	
 	default:
-		
+		game_restart();
 	break;
 }

@@ -5,11 +5,16 @@ if(!attacking){
 }
 
 if(attacking){
-	move_towards_point(obj_player.x, obj_player.y, 3)
+	move_towards_point(obj_player.x, obj_player.y, 6)
+	timer--;
 }
 
 if(health<=0){
 	instance_destroy(self)
 }
 
+if(timer <= 0){
+	attacking = false;
+	timer = 50
+}
 

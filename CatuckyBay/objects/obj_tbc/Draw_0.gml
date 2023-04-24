@@ -10,12 +10,14 @@ if(room = rm_intro){
 
 if (room = Room3){
 	draw_set_colour(c_white);
-	draw_text_transformed(x-300, y, "Great Job, all the fish were caught!", 3 , 3,0 )
+	draw_text_transformed(x-300, y-200, "Wave Cleared!", 3 , 3,0 )
+	draw_text_transformed(x-300, y-100, "Wave: " + string(global.waves), 2 , 2,0 )
 }
 
 if (room = rm_gameOver){
 	draw_set_colour(c_white);
 	draw_text_transformed(x-300, y, "GAME OVER", 3 , 3,0 )
+	draw_text_transformed(x-300, y+100, "Wave: " + string(global.waves), 2 , 2,0 )
 	//draw_set_colour(c_black);
 	//draw_text_transformed(inst_489A22F7.x, inst_489A22F7.y, "Try Again", 2 , 2,0 )
 	//draw_text_transformed(inst_214DB9DA.x, inst_214DB9DA.y, "Return to Title Screen", 2 , 2,0 )

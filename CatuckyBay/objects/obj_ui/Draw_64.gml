@@ -10,7 +10,9 @@ if (room = Room1){
 		draw_text(x+500,y, "Press left mouse to cast fishing line")
 		draw_text(x+850,y, "Press SPACE to reel in")
 	}
-	
+	if(!call){
+		event_user(0)
+	}
 	draw_text(x+1200,y-5,timer)
 
 	if (timer > 0) {timer--;}
@@ -21,6 +23,7 @@ if (room = Room1){
 	}
 }
 
+if(room = Room1 or room = Room2){
 //for(var i = 0; i < global.swordCount; i++){
 	draw_sprite(spr_fishSword,0,x,y)
 	draw_text(x+4,y-5,global.swordCount)
@@ -29,7 +32,7 @@ if (room = Room1){
 	draw_sprite(spr_fishPuffer,0,x + 300,y)
 	draw_text(x+304,y-5,global.pufferCount)
 	
-//}
+}
 
 
 if global.pufferCount + global.swordCount == global.maxFish{
@@ -40,16 +43,18 @@ if global.pufferCount + global.swordCount == global.maxFish{
 if (room = Room2){
 	timer = -1;
 	draw_set_color(c_white);
-	camx = camera_get_view_x(0);
-	camy = camera_get_view_y(0);
 	offset = 64
+	x1 = x+400
 	//ADD INVENTORY FOR FISH HERE TOO
 	for(var i = 0; i<global.lives;i++){
 		if(i =0){
-			draw_sprite(spr_hearts,0,camx + offset, camy+75)
+			draw_sprite(spr_hearts,0,x1 + offset, y-10)
 		}else{
-		draw_sprite(spr_hearts,0,camx + offset*i, camy+75)
+		draw_sprite(spr_hearts,0,x1 + offset*i, y-10)
 		}//end if else
 	}//end for loop
-	//draw_text(x+850,y, "Press 2 to go to next day")
+	draw_text(x+700,y, "Press 1 to use Sword Fish")
+	draw_text(x+700,y+25, "Press 2 to use Puffer Fish")
+	draw_text(x+700,y+50, "Press SPACE to attack")
+
 }//end of room if statement

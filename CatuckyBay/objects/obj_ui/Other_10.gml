@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-timer = 20
-attacking = false;
 
+timer = room_speed * 30
+call = true
