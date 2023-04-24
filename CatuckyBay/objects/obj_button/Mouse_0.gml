@@ -29,6 +29,10 @@ switch(moveRoom){
 		room_goto(Room1);
 	break;
 	
+	case 6:
+		room_goto(rm_GameWin)
+		global.pufferCount = 0
+		global.swordCount = 0
 	default:
 		game_restart();
 	break;

@@ -35,8 +35,8 @@ if(room = Room1 or room = Room2){
 }
 
 
-if global.pufferCount + global.swordCount == global.maxFish{
-	global.maxFish += 2
+if room = Room1 and !instance_exists(obj_fishPuffer) and !instance_exists(obj_fishSword){
+	
 	room_goto(Room2)
 	
 }

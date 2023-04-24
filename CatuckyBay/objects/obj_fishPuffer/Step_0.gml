@@ -43,7 +43,6 @@ if point_distance(x,y,obj_bobber.x,obj_bobber.y) <= lureRadius and obj_bobber.ac
 	
 }
 
-
 //checks if fish is too far
 if (point_distance(x,y,obj_bobber.x,obj_bobber.y) >= lureRadius+1) and chasing and obj_bobber.active{
 		fade = true
