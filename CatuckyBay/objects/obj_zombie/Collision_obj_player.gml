@@ -1,13 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if (!attacking){
-	alarm[0] = 50;
-	attacking = false;
-}
+alarm[0] = 15
 
 if(attacking){
 	global.lives--;
+	attacking = false
 }
 
 

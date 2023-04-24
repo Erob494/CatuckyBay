@@ -6,3 +6,4 @@ global.pufferCount = 0
 global.meterFail = false
 global.level = 1
 global.maxFish = 5
+global.waves = 1

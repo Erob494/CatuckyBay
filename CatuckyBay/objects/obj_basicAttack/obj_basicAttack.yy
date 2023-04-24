@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_inventory",
+  "name": "obj_basicAttack",
   "spriteId": {
-    "name": "spr_inventory",
-    "path": "sprites/spr_inventory/spr_inventory.yy",
+    "name": "spr_bobbe",
+    "path": "sprites/spr_bobbe/spr_bobbe.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_SwordFish",
+    "path": "objects/obj_SwordFish/obj_SwordFish.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,7 +27,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_zombie","path":"objects/obj_zombie/obj_zombie.yy",},},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
