@@ -5,7 +5,7 @@ if(!attacking){
 }
 
 if(attacking){
-	move_towards_point(obj_player.x, obj_player.y, 6)
+	move_towards_point(obj_player.x, obj_player.y, 7)
 	timer--;
 }
 

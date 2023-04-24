@@ -44,7 +44,7 @@ if (room = Room2){
 	timer = -1;
 	draw_set_color(c_white);
 	offset = 64
-	x1 = x+400
+	x1 = x+500
 	//ADD INVENTORY FOR FISH HERE TOO
 	for(var i = 0; i<global.lives;i++){
 		if(i =0){
@@ -53,8 +53,8 @@ if (room = Room2){
 		draw_sprite(spr_hearts,0,x1 + offset*i, y-10)
 		}//end if else
 	}//end for loop
-	draw_text(x+700,y, "Press 1 to use Sword Fish")
-	draw_text(x+700,y+25, "Press 2 to use Puffer Fish")
-	draw_text(x+700,y+50, "Press SPACE to attack")
+	draw_text(x-50,y+20, "Press 1 to use Sword Fish")
+	draw_text(x+200,y+20, "Press 2 to use Puffer Fish")
+	draw_text(x+600,y+50, "Press SPACE to attack")
 
 }//end of room if statement

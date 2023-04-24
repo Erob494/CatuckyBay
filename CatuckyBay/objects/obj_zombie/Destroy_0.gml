@@ -6,4 +6,6 @@ if(i = 5){
 	global.pufferCount++
 }else if(i = 7){
 	global.swordCount++
+}else if(i = 3){
+	global.lives++
 }
