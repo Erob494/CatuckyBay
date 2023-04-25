@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 inflate = false
+audio_play_sound(snd_puffer, 1, false);
 switch(obj_player.dir){
 	case 0:
 		hspeed = 20;

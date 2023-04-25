@@ -12,6 +12,7 @@
     {"id":{"name":"spr_zombie","path":"sprites/spr_zombie/spr_zombie.yy",},"order":16,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":15,},
     {"id":{"name":"obj_tbc","path":"objects/obj_tbc/obj_tbc.yy",},"order":14,},
+    {"id":{"name":"snd_zombiesDeath","path":"sounds/snd_zombiesDeath/snd_zombiesDeath.yy",},"order":6,},
     {"id":{"name":"spr_sweetSpot","path":"sprites/spr_sweetSpot/spr_sweetSpot.yy",},"order":13,},
     {"id":{"name":"obj_dock","path":"objects/obj_dock/obj_dock.yy",},"order":0,},
     {"id":{"name":"obj_bobber","path":"objects/obj_bobber/obj_bobber.yy",},"order":2,},
