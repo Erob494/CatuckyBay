@@ -4,7 +4,7 @@ if instance_place(x,y,obj_sweetSpot){
 	
 		
 	global.meterSuccess = true
-	
+	audio_play_sound(snd_fishCaught, 1, false);
 	
 	
 	show_debug_message("caught")
