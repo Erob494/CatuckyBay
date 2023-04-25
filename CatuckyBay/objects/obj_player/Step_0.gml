@@ -5,19 +5,15 @@ if keyboard_check(vk_up){
 	y -=5
 	dir = 90;
 }else if keyboard_check(vk_down){
-	sprite_index = spr_mcWalksDown	
+	sprite_index = spr_mcWalkDown	
 	y += 5
 	dir = 270;
-}else{
-	sprite_index = spr_mcIdle;
-}
-
-if keyboard_check(vk_left){
+}else if keyboard_check(vk_left){
+	sprite_index = spr_mcWalkLeft
 	x -= 5
 	dir = 180
-}
-
-if keyboard_check(vk_right){
+}else if keyboard_check(vk_right){
+	sprite_index = spr_mcWalkRight
 	x += 5
 	dir = 0;
 }
